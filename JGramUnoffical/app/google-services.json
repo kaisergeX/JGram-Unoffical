@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:52266203409:android:5a658b1ee656d7cc8db4b0",
         "android_client_info": {
-          "package_name": "com.example.testnav"
+          "package_name": "com.example.jgram"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "52266203409-8hf0otjel8l5eqhnqr1gmd58npmtbrq6.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.testnav",
+            "package_name": "com.example.jgram",
             "certificate_hash": "7c06700ec3a22fa75df372ef6e119b3ecdc0d5da"
           }
         },
