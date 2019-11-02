@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">JGram</string>
+    <string name="title_home">JGram</string>
+    <string name="title_addImage">Add Image</string>
+    <string name="title_myPage">Username</string>
+</resources>

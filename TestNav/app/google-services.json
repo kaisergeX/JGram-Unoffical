@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "52266203409",
+    "firebase_url": "https://jgram-test.firebaseio.com",
+    "project_id": "jgram-test",
+    "storage_bucket": "jgram-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52266203409:android:5a658b1ee656d7cc8db4b0",
+        "android_client_info": {
+          "package_name": "com.example.testnav"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52266203409-8hf0otjel8l5eqhnqr1gmd58npmtbrq6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.testnav",
+            "certificate_hash": "7c06700ec3a22fa75df372ef6e119b3ecdc0d5da"
+          }
+        },
+        {
+          "client_id": "52266203409-2doji72ud0e0tluptunbj42sjjep36a3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_wwqmDW7_2h0Xkd1qrSb_O6-0anMyYDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52266203409-2doji72ud0e0tluptunbj42sjjep36a3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
