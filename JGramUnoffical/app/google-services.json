@@ -8,14 +8,14 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:52266203409:android:5a658b1ee656d7cc8db4b0",
+        "mobilesdk_app_id": "1:52266203409:android:cf3921ad8bd537b18db4b0",
         "android_client_info": {
           "package_name": "com.example.jgram"
         }
       },
       "oauth_client": [
         {
-          "client_id": "52266203409-8hf0otjel8l5eqhnqr1gmd58npmtbrq6.apps.googleusercontent.com",
+          "client_id": "52266203409-5fjog2707po3vh0hkkmtcio7946o11hh.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.jgram",
