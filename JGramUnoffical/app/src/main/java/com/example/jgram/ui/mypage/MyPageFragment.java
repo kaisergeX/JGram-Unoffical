@@ -17,6 +17,8 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.jgram.MainActivity;
 import com.example.jgram.R;
+import com.facebook.AccessToken;
+import com.facebook.login.LoginManager;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -25,6 +27,8 @@ public class MyPageFragment extends Fragment {
     private MyPageViewModel myPageViewModel;
     private FirebaseAuth firebaseAuth;
     private FirebaseUser currentUser;
+    private AccessToken accessToken;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         myPageViewModel = ViewModelProviders.of(this).get(MyPageViewModel.class);
@@ -34,7 +38,7 @@ public class MyPageFragment extends Fragment {
         Button buttonSignOut = root.findViewById(R.id.buttonSignOut);
 
         firebaseAuth = FirebaseAuth.getInstance();
-        currentUser= firebaseAuth.getCurrentUser();
+        currentUser = firebaseAuth.getCurrentUser();
 
         myPageViewModel.getText().observe(this, new Observer<String>() {
             @Override
@@ -46,7 +50,14 @@ public class MyPageFragment extends Fragment {
         buttonSignOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                accessToken = AccessToken.getCurrentAccessToken();
+                boolean isLoggedIn = accessToken != null && !accessToken.isExpired();
+                if (isLoggedIn) {
+                    LoginManager.getInstance().logOut();
+                }
                 FirebaseAuth.getInstance().signOut();
+
                 Toast.makeText(getContext(), "See u!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getContext(), MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

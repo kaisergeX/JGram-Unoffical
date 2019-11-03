@@ -1,4 +1,8 @@
 <resources>
+    <string name="facebook_app_id">459506944674440</string>
+    <string name="fb_login_protocol_scheme">fb459506944674440</string>
+
+
     <string name="app_name">JGram</string>
     <string name="title_home">JGram</string>
     <string name="title_addImage">Add Image</string>
